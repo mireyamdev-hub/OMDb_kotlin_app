@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/moviesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_local_movies_24"
+        android:title="@string/movies"/>
+    <item
+        android:id="@+id/seriesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_movie_24"
+        android:title="@string/series"/>
+</menu>
