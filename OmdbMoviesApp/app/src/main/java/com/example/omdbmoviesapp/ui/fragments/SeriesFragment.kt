@@ -101,7 +101,7 @@ class SeriesFragment : Fragment(), androidx.appcompat.widget.SearchView.OnQueryT
         CoroutineScope(Dispatchers.IO).launch {
             //Secondary thread
             val call: Response<SeriesResponse> = getRetrofit().create(APIService::class.java)
-                .getSeriesByTitle("?apikey=f6e9b4c9&s=$query&type=series")
+                .getSeriesByTitle("?apikey=(your apikey here)&s=$query&type=series")
             Log.v(ContentValues.TAG, "RESPONSE ---> " + call);
             val series: SeriesResponse? = call.body()
             //Main thread
