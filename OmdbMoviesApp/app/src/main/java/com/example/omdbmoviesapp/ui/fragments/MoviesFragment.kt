@@ -105,7 +105,7 @@ class MoviesFragment : Fragment(), androidx.appcompat.widget.SearchView.OnQueryT
         CoroutineScope(Dispatchers.IO).launch {
             //Secondary
             val call:Response<MoviesResponse> = getRetrofit().create(APIService::class.java)
-                .getMovieByTitle("?apikey=f6e9b4c9&s=$query&type=movie")
+                .getMovieByTitle("?apikey=(your apikey here)&s=$query&type=movie")
             Log.v(TAG, "RESPONSE ---> " + call);
             val movies:MoviesResponse? = call.body()
             //Main thread
